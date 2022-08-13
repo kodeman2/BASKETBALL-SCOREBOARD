@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>BasketBall ScoreBoard</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1 class="title">Basketball Scorecard</h1>
+ <div class="container">
+  <div id= "homeTeam">
+      <h3>HOME</h3>
+      <div class="score">
+       <span id = "homeScore">0</span>
+      </div>
+      <button class="scoreBtn" onclick="onePointHome()">+1</button>
+      <button class="scoreBtn" onclick="twoPointHome()">+2</button>
+      <button class="scoreBtn" onclick="threePointHome()">+3</button>
+  </div>
+  <div id= "guestTeam">
+   <h3>HOME</h3>
+   <div class="score">
+    <span id = "guestScore">0</span>
+   </div>
+   <button class="scoreBtn" onclick="onePointGuest()">+1</button>
+   <button class="scoreBtn" onclick="twoPointGuest()">+2</button>
+   <button class="scoreBtn" onclick="threePointGuest()">+3</button>
+</div>
+</div>
+<div>
+ <p id="result"></p>
+</div>
+<button class="gameBtn" onclick="newGame()" >New Game</button>
+    <button class="gameBtn" onclick="endGame()" >End Game</button>
+ <script src="/index.js"></script>
+</body>
+</html>
